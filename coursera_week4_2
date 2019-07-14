@@ -1,0 +1,35 @@
+def IsPrime(n):
+
+    i = 2
+    nn = n ** .5
+    while i<=nn:
+        i += 1
+        if n % i == 0 :
+            break
+            
+    if i == nn:       
+        return "YES"
+    else:
+        return "NO"
+
+
+x = int(input())
+print(IsPrime(x))
+
+
+def IsPrime(n):
+    nn = n ** .5
+    i = 2
+    while n % i != 0:
+        i += 1
+        if i > nn:
+             break
+    if i == n:
+        IsPrime = "YES"
+    else:
+        IsPrime = "NO"
+    return IsPrime
+
+
+x = int(input())
+print(IsPrime(x))
