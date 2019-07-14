@@ -1,0 +1,13 @@
+a = int(input())
+
+for i in range(a):
+    print("+___ ",sep="",end="")
+print()
+for i in range(a):    
+    print("|",i+1," / ",sep="",end="")
+print()
+for i in range(a):    
+    print("|__\ ",sep="",end="")
+print()
+for i in range(a):    
+    print("|    ",sep="",end="")
