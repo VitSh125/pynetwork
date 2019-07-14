@@ -1,0 +1,15 @@
+n = int(input()) 
+m = int(input()) 
+
+def rf(a, b):
+    while a != 0 and b != 0:
+        if a > b:
+            a = a % b
+        else:
+            b = b % a
+ 
+    return (a + b)
+      
+    
+nm =  rf(n, m)       
+print(int(n/nm),int(m/nm))
