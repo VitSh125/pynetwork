@@ -1,0 +1,158 @@
+
+def MinDivisor(n): 
+    nn = n ** .5
+    i = 1
+    while i<nn:
+        i += 1
+        #print(i,nn)
+        if n % i == 0 :
+            break
+    if i == int(nn):
+        return i
+    else:
+        return n
+    
+    
+x = int(input()) 
+print(int(MinDivisor(x)))
+
+
+_______________________________________
+def IsPrime(n):
+
+    i = 2
+    nn = n ** .5
+    while i<=nn:
+        i += 1
+        if n % i == 0 :
+            break
+            
+    if i == nn:       
+        return "YES"
+    else:
+        return "NO"
+
+
+x = int(input())
+print(IsPrime(x))
+
+
+def IsPrime(n):
+    nn = n ** .5
+    i = 2
+    while n % i != 0:
+        i += 1
+        if i > nn:
+             break
+    if i == n:
+        IsPrime = "YES"
+    else:
+        IsPrime = "NO"
+    return IsPrime
+
+
+x = int(input())
+print(IsPrime(x))
+_____________________________________
+
+def power(a, n):
+    if n == 0:
+        return 1    
+    return a * power(a, n - 1)
+     
+
+a = float(input()) 
+n = int(input()) 
+print(power(a, n))
+
+
+__________________________---
+
+
+
+a = int(input())
+n = int(input())
+
+
+def power(a, n):
+    if n == 0:
+        return 1
+    return a * power(a, n - 1)
+
+
+def ologin(a, n):
+    if n % 2 == 0:
+        return (a * a) ** (n // 2)
+    else:
+        return a * a ** (n - 1)
+
+
+print(ologin(a, n))
+
+
+_______________________________________-
+
+n = int(input()) 
+m = int(input()) 
+
+def rf(a, b):
+    while a != 0 and b != 0:
+        if a > b:
+            a = a % b
+        else:
+            b = b % a
+ 
+    return (a + b)
+      
+    
+nm =  rf(n, m)       
+print(int(n/nm),int(m/nm))
+
+
+______________________________________________________
+week5
+a = int(input())
+b = int(input())
+for i in range(a, b+1):
+     print(i, end=' ')
+print(tuple(range(a,b+1)))
+
+
+____________________________________________
+a = int(input())
+b = int(input())
+if a<=b:
+    for i in range(a, b+1):
+        print(i, end=' ')
+else:
+    for i in range(b, a+1):
+        print(i, end=' ')
+
+_____________________________________________
+a = int(input())
+
+for i in range(a):
+    print("+___ ",sep="",end="")
+print()
+for i in range(a):    
+    print("|",i+1," / ",sep="",end="")
+print()
+for i in range(a):    
+    print("|__\ ",sep="",end="")
+print()
+for i in range(a):    
+    print("|    ",sep="",end="")
+
+
+
+________________________________________
+
+
+a = int(input())
+
+for i in range(a+1):
+    for j in range(i):
+        print(j+1,end=" ")
+    print()
+
+______________________________________________
